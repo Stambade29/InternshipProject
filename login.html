@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      /* Center the login box */
+      .login {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+      
+      /* Style the input fields */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Style the Login button */
+      button[type=submit] {
+        background-color: #0e0f0e;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      /* Add a hover effect to the Login button */
+      button[type=submit]:hover {
+        background-color: #0c0c0c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <h2>Login</h2>
+      <form action="/login" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
